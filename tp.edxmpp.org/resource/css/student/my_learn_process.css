@@ -1,0 +1,127 @@
+body{
+    background: url("../../pics/share/teach_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    background: aquamarine;
+    border-radius: 5px;
+}
+
+.mlp-block{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.tool{
+    cursor: pointer;
+    font-size: 24px !important;
+    margin: 0 0.3rem;
+}
+
+.fa.fa-reply.tool{
+    color:crimson;
+}
+
+.fa.fa-star.tool{
+    color:dodgerblue;
+    /*color:deepskyblue;*/
+}
+
+.fa.fa-share-square.tool{
+    color: limegreen;
+}
+
+.fa.fa-pencil-square{
+    color: cornflowerblue;
+}
+
+.bootstrap-table.fullscreen{
+    margin: 12rem 0;
+}
+
+#hint_window{
+    margin-left: 0 !important;
+}
+
+.comment{
+    margin: 1rem 0;
+    height: 10rem;
+}
+
+.modal-body .btn.btn-success{
+    float: right;
+}
+
+.rating_block{
+    font-size: 24px;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.rating_block div{
+    color: coral;
+}
+
+.comment_block fa.fa-pencil{
+    font-size: 24px;
+}
+
+.search{
+    padding-top: 0;
+}
+
+.tool-btn{
+    margin-top: 1rem;
+}
+
+
+/*          重要設定 開始         */
+/*#table{*/
+/*    margin-top: 0 !important;*/
+/*}*/
+
+/*.fixed-table-header{*/
+/*    display: none !important;*/
+/*}*/
+
+.bootstrap-table .fixed-table-container.fixed-height:not(.has-footer) {
+     border-bottom: unset !important;
+}
+
+.fixed-table-container.fixed-height{
+    padding-bottom: 0 !important;
+}
+
+.fixed-table-pagination{
+    margin-top: 3rem;
+}
+/*          重要設定 結束         */
+
+@media (max-width: 368px){
+    .float-left{
+        float: unset !important;
+    }
+
+    .select.mt-10.row.col-sm-12.flex-nowrap{
+        flex-wrap: unset !important;
+    }
+}
+
+@media (max-width: 576px){
+    .bootstrap-table.bootstrap4{
+        padding: 0 1rem;
+    }
+
+    .fixed-table-container.fixed-height{
+        height: 26.5rem !important;
+    }
+
+    .tool{
+        margin: 0.3rem 0.3rem;
+    }
+}

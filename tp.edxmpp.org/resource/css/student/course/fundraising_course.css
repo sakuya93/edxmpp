@@ -1,0 +1,626 @@
+body {
+    overflow-x: hidden;
+}
+
+/*top start*/
+.hero {
+    margin-top: 0 !important;
+}
+
+.inner_text {
+    position: relative;
+    left: 270px;
+    top: -40px;
+}
+
+.hero-body {
+    height: 100vh;
+    width: 100vw;
+    margin-left: -15px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero.is-fullheight {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero span, .hero p {
+    color: white;
+    font-size: 17px;
+}
+
+/*麵包屑*/
+.breadcrumb ol, .breadcrumb ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.breadcrumb ul {
+    list-style: none;
+}
+
+.breadcrumb a, .breadcrumb span {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb {
+    background: rgba(79, 243, 255, 0.8);
+}
+
+.breadcrumb a:hover {
+    color: red;
+}
+
+/*簡介*/
+.title {
+    margin-bottom: 20px;
+}
+
+.title span {
+    font-size: 36px !important;
+}
+
+/*影片區*/
+.course_video {
+    margin-top: -25px;
+}
+
+/*課程影片*/
+.course_bar {
+    background: rgba(0, 0, 0, 0.4);
+    margin-left: -30px;
+    float: right;
+    width: 25vw;
+    height: auto;
+    padding: 20px;
+}
+
+.course_bar span {
+    color: white;
+    word-break: break-all;
+}
+
+/*影片右側募資資訊*/
+.fundraising_course_information {
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fundraising_course_information #fundraising_course_information_text {
+    font-size: 25px;
+}
+
+/*募資剩餘時間*/
+.fundraising_course_time {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#remaining_time span {
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+/*募資價格*/
+.price_area {
+    margin-bottom: 20px;
+}
+
+.price_area p {
+    font-size: 15px;
+    color: lightgray;
+}
+
+.price_area span {
+    font-size: 25px;
+}
+
+.price_area .market_price {
+    border-right: 1px solid white;
+}
+
+.price_area .market_price, .price_area .fundraising_price {
+    text-align: center;
+}
+
+/*有興趣按鈕*/
+.interested_btn {
+    font-size: 20px;
+    margin-left: 28px;
+}
+
+/*有興趣按鈕不可點擊*/
+.not_interested_btn{
+    cursor: not-allowed !important;
+}
+
+/*募資總目標*/
+.fundraising_goals {
+    margin-top: 20px;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+.fundraising_goals span {
+    color: black;
+}
+
+.fundraising_goals .goals {
+    float: right;
+}
+
+/*聯繫老師按鈕*/
+.contact_teacher_btn {
+    position: absolute;
+    bottom: -90px;
+    left: 15px;
+    width: 200px;
+    height: 80px;
+    font-size: 25px;
+}
+
+/*top end*/
+
+/*main start*/
+.course_information {
+    margin-top: -50px;
+    margin-bottom: 80px;
+}
+
+.information_title {
+    font-size: 24px !important;
+    color: grey !important;
+    border-bottom: 1px solid grey;
+}
+
+/*老師簡介*/
+.teacher_information {
+    margin-top: 30px;
+}
+
+.sticker {
+    max-width: 150px;
+    max-height: 120px;
+}
+
+.teacher_name {
+    font-size: 20px;
+    color: #2cc36b;
+    cursor: pointer;
+    width: 300px;
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    /*省略符號*/
+    text-overflow: ellipsis;
+}
+
+.teacher_name :hover {
+    color: #20ff52;
+}
+
+.teacher_Introduction {
+    font-size: 16px;
+}
+
+.teacher_Introduction > *{
+    display: inline;
+}
+
+/*main end*/
+
+/*課程留言討論區 start*/
+.message_discuss_area{
+    margin-bottom: 80px;
+}
+
+.message_discuss_area .title {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.message_discuss_area .avatar {
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+/*使用者區*/
+.message_discuss_area .user_area .avatar {
+    margin-top: -50px;
+}
+
+.message_discuss_area textarea {
+    border: 1px;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    resize: none;
+    width: 50vw;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.message_discuss_area .message_btn, .message_discuss_area .cancel_message_btn {
+    visibility: hidden;
+    position: relative;
+    right: 0;
+    top: -13px;
+}
+
+/*討論區*/
+.discuss_area {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: 0;
+}
+
+.discuss_area .avatar_area {
+    float: left;
+}
+
+.discuss_area .message_information_area .score_area i {
+    margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.discuss_area .message_information_area .score_area span {
+    cursor: pointer;
+    color: blue;
+}
+
+.discuss_area .message_information_area .reply_area {
+    margin-top: 10px;
+}
+
+.more_reply {
+    cursor: pointer;
+    color: blue;
+}
+
+.more_message_discuss_area {
+    margin-top: 15px;
+    margin-left: -60px;
+    transform: scale(0.9);
+    display: none;
+}
+
+.more_message_discuss_area .avatar {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.more_message_discuss_area .score_area {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.discuss_area .message_text {
+    word-break: break-all;
+}
+
+.message_information_area {
+    margin-bottom: 20px;
+}
+
+/*回覆區*/
+.reply_input_area {
+    transform: scale(0.7);
+    margin-left: -140px;
+    margin-bottom: -10px;
+    width: auto;
+    display: none;
+}
+
+.reply_input_area textarea {
+    width: 40vw;
+}
+
+/*更多資料載入icon*/
+.more_loading_icon {
+    background-image: url('../../../pics/loading.gif');
+    background-repeat: no-repeat;
+    margin: 50px 0 10px 50px;
+    display: none;
+}
+
+.more_loading_icon p {
+    margin-left: 10px;
+    margin-top: -3px;
+}
+
+/*課程留言討論區 end*/
+
+/*----------------------------------------響應----------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+    .hero.is-fullheight {
+        height: 1100px;
+    }
+
+    .hero-body {
+        height: 1100px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        left: -20px;
+        top: -50px;
+    }
+
+    .course_video {
+        width: 100vw;
+        height: 80vw;
+        margin-left: -4px;
+        margin-top: -10px;
+    }
+
+    .course_bar {
+        width: 100vw;
+        height: auto;
+        border-top: 1px dashed white;
+        float: none;
+        margin-left: -4px;
+        margin-top: 10px;
+    }
+
+    .market_price {
+        border-right: unset !important;
+    }
+
+    .interested_btn {
+        margin-left: 0;
+    }
+
+    .contact_teacher_btn {
+        transform: scale(0.8);
+        margin-left: 55px;
+    }
+
+    .reply_input_area{
+        margin-left: -60px;
+    }
+
+    .more_message_discuss_area{
+        margin-left: -43px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+    .hero.is-fullheight {
+        height: 1200px;
+    }
+
+    .hero-body {
+        height: 1200px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        left: -20px;
+        top: -40px;
+    }
+
+    .course_video {
+        width: 100vw;
+        height: 80vw;
+        margin-left: -4px;
+        margin-top: -10px;
+    }
+
+    .course_bar {
+        width: 100vw;
+        height: auto;
+        border-top: 1px dashed white;
+        float: none;
+        margin-left: -4px;
+        margin-top: 10px;
+    }
+
+    .market_price {
+        border-right: unset !important;
+    }
+
+    .interested_btn {
+        margin-left: 0;
+    }
+
+    .contact_teacher_btn {
+        transform: scale(0.8);
+        margin-left: 80px;
+    }
+
+    .course_info{
+        margin-top: 1rem;
+    }
+
+    .reply_input_area{
+        margin-left: -60px;
+    }
+
+    .more_message_discuss_area{
+        margin-left: -30px;
+    }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .hero.is-fullheight {
+        height: 1160px;
+    }
+
+    .hero-body {
+        height: 1160px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        left: -20px;
+        top: -30px;
+    }
+
+    .course_video {
+        width: 100vw;
+        height: 80vw;
+        margin-left: -4px;
+        margin-top: -10px;
+    }
+
+    .course_bar {
+        width: 100vw;
+        height: auto;
+        border-top: 1px dashed white;
+        float: none;
+        margin-left: -4px;
+        margin-top: 10px;
+    }
+
+    .market_price {
+        border-right: unset !important;
+    }
+
+    .interested_btn {
+        margin-left: 0;
+    }
+
+    .contact_teacher_btn {
+        transform: scale(0.8);
+        margin-left: 110px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .hero.is-fullheight {
+        height: 1170px;
+    }
+
+    .hero-body {
+        height: 1170px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        left: -20px;
+        top: -30px;
+    }
+
+    .course_video {
+        width: 95vw;
+        height: 50vw;
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+
+    .course_bar {
+        width: 100vw;
+        height: auto;
+        border-top: 1px dashed white;
+        float: none;
+        margin-left: -4px;
+        margin-top: 10px;
+    }
+
+    .market_price {
+        border-right: unset !important;
+    }
+
+    .interested_btn {
+        margin-left: 50px;
+    }
+
+    .contact_teacher_btn {
+        transform: scale(1);
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .hero.is-fullheight {
+        height: 850px;
+    }
+
+    .hero-body {
+        height: 850px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        left: 30px;
+        top: -20px;
+    }
+
+    .course_video {
+        height: 40vw;
+        width: 50vw;
+        margin-top: -19px;
+    }
+
+    .course_bar {
+        height: auto;
+        width: 40vw;
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .hero.is-fullheight {
+        height: 850px;
+    }
+
+    .hero-body {
+        margin-left: 0;
+        height: 850px;
+    }
+
+    .course_bar {
+        height: auto;
+        width: 30vw;
+        margin-left: -15px;
+    }
+
+    .inner_text {
+        left: 120px;
+        top: -20px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    .hero.is-fullheight {
+        height: 1100px;
+    }
+
+    .hero-body {
+        height: 1100px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        transform: scale(1.2);
+        top: -30px;
+    }
+}
+
+@media only screen and (min-width: 1496px) {
+    .hero.is-fullheight {
+        height: 800px;
+    }
+
+    .hero-body {
+        height: 800px;
+        margin-left: 0;
+    }
+
+    .inner_text {
+        transform: scale(1);
+        top: -30px;
+        left: 200px;
+    }
+}

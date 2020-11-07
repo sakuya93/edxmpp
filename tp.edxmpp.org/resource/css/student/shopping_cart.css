@@ -1,0 +1,967 @@
+body{
+    /*background: url("../../pics/share/teach_bg.jpg");*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+}
+
+.nav-item h2, .nav-item li, .nav-item ol, .menu-message p, .nav-item ul {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*主要標題*/
+.title {
+    margin-top: 100px;
+}
+
+/*標題文字*/
+.title_text {
+    font-size: 18px;
+    margin: 30px 0 10px 0;
+    font-weight: bold;
+}
+
+.bd-2-s-gray {
+    border: 2px solid rgba(211, 220, 230, .3);
+}
+
+.item {
+    width: 100%;
+    /*height: 100%;*/
+    border-bottom: 2px solid rgba(211, 220, 230, .3);
+}
+
+.shopping_cart-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 70px;
+}
+
+/*商品 start*/
+.commodity{
+    background: white;
+}
+
+.commodity .internal {
+    margin-left: 10px;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.commodity .internal div {
+    display: inline-block;
+}
+
+/*頭像*/
+.sticker {
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 130px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*老師名稱*/
+.news .name {
+    font-size: 20px;
+}
+
+/*課程名稱*/
+.t_name span {
+    color: #02cab9;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.t_name span:hover {
+    color: #288eca;
+}
+
+/*資訊*/
+.news_area {
+    width: 350px;
+}
+
+/*學習選擇區*/
+.learn_area {
+    margin-right: 90px;
+    width: 170px;
+}
+
+/*時數*/
+.hour_area {
+    margin-right: 50px;
+    width: 110px;
+}
+
+/*購買課程選擇區*/
+.purchase_course_area {
+    margin-right: 65px;
+    width: 170px;
+}
+
+/*刪除*/
+.delete_commodity i {
+    font-size: 18px;
+    color: grey;
+    cursor: pointer;
+}
+
+.delete_commodity i:hover {
+    color: black;
+}
+
+/*商品 end*/
+
+/*  優惠券  */
+.coupon-body {
+    padding: 18px;
+}
+
+/*購物明細*/
+.shopping_cart-container .item {
+    padding: 10px;
+    /*height: 100%;*/
+}
+
+.buy_detail{
+    background: white;
+}
+
+/*付款方式*/
+.payment_method {
+    width: 100%;
+}
+
+.payment_method .card {
+    display: inline-block;
+    border: 2px solid rgba(211, 220, 230, .3);
+    padding: 20px 10px;
+    width: 15%;
+    min-height: 100px;
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.payment_method .card:hover {
+    background-color: rgba(211, 220, 230, .9);
+}
+
+.payment_method .card i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 23px;
+    color: #1281ca;
+    display: none;
+}
+
+.payment_method .card span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/*分隔線*/
+.separation_line {
+    border: 1.2px solid rgba(211, 220, 230, .3);
+    min-width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+/*明細標頭*/
+.shopping_details_header div {
+    display: inline-block;
+}
+
+/*明細區塊 顯示/隱藏 start*/
+.detail_show {
+    display: inline !important;
+}
+
+.detail_hide {
+    display: none !important;
+}
+
+/*明細區塊 顯示/隱藏 end*/
+
+.shopping_details_header .name {
+    margin-left: 20px;
+    width: 85%;
+}
+
+.shopping_details_header .price {
+    width: 10%;
+}
+
+.shopping_details_header span {
+    font-size: 20px;
+}
+
+/*明細中間*/
+.shopping_details_intermediate div {
+    display: inline-block;
+}
+
+.shopping_details_intermediate .price_title {
+    margin-left: 20px;
+    width: 85%;
+}
+
+.shopping_details_intermediate .price_total {
+    width: 10%;
+}
+
+.shopping_details_intermediate span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/*明細結尾*/
+.shopping_details_footer div {
+    display: inline-block;
+}
+
+.shopping_details_footer .pay_hint {
+    margin-left: 20px;
+    width: 85%;
+}
+
+.shopping_details_footer .pay {
+    width: 10%;
+}
+
+.shopping_details_footer .expiry_date {
+    margin-left: 20px;
+    width: 85%;
+}
+
+.shopping_details_footer span {
+    font-size: 14px;
+}
+
+/*明細同意條款*/
+.agreement {
+    margin: 2em 0;
+}
+
+.agreement span{
+    font-weight: bold;
+}
+
+.agreement a {
+    text-decoration: none;
+}
+
+.agreement .agree_btn {
+    margin-top: 10px;
+}
+
+/* 響應 */
+/*676以下變更成手機板的商品樣式*/
+@media only screen and (max-width: 676px) {
+    .shopping_cart-container {
+        max-width: 700px;
+    }
+
+    /*商品 start*/
+    /*title區*/
+    .news_title p {
+        display: none;
+    }
+
+    .phone_course_amount_title, .phone_class_hours_title, .phone_learn_title {
+        font-size: 18px;
+        display: inline;
+    }
+
+    /*學習*/
+    .phone_learn_title {
+        position: relative;
+        top:-25px;
+        left: 1px;
+    }
+
+    .learn_area select{
+        position: relative;
+        top:-60px;
+        right: -157px;
+        min-width: 150px;
+    }
+
+    /*時間*/
+    .phone_class_hours_title {
+        position: relative;
+        top:10px;
+        left: -95px;
+    }
+
+    .hour_area #hour{
+        position: relative;
+        top:-18px;
+        left: -7px;
+        width: 100%;
+        white-space:nowrap;
+    }
+
+    /*課程金額*/
+    .phone_course_amount_title {
+        position: relative;
+        top:60px;
+        left: -205px;
+        white-space:nowrap;
+    }
+
+    .purchase_course_area select{
+        position: relative;
+        top:25px;
+        right: 78px;
+    }
+
+    /*選取框*/
+    .form-check-input {
+        position: absolute;
+        margin-top: -60px;
+        margin-left: -10px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .commodity_title {
+        max-width: 50%;
+    }
+
+    .learn_title {
+        width: 18.5vw;
+    }
+
+    .class_hours_title {
+        width: 110px;
+    }
+
+    /*資訊區*/
+    .sticker {
+        max-width: 130px;
+        height: 100px;
+    }
+
+    .news_area {
+        width: 500px;
+    }
+
+    .news_area, .t_name span {
+        font-size: 20px;
+    }
+
+    .learn_area select {
+        font-size: 15px;
+        margin-left: -70px;
+        width: 140px;
+    }
+
+    .hour_area {
+        font-size: 17px;
+        margin-left: -50px;
+        width: 180px;
+    }
+
+    .purchase_course_area select {
+        font-size: 15px;
+        margin-left: -40px;
+        width: 150px;
+    }
+
+    .del_commodity_title {
+        display: none;
+    }
+
+    .delete_commodity {
+        position: relative;
+        top: -50px;
+        left: -20px;
+    }
+
+    /*商品 end*/
+    /*付款方式*/
+    .payment_method .card {
+        min-width: 65%;
+        margin-left: 100px;
+    }
+
+    /*明細*/
+    .detail_show span {
+        font-size: 18px;
+    }
+
+    .detail_show .name {
+        width: 65%;
+    }
+
+    /*明細總價*/
+    .shopping_details_intermediate .price_title {
+        width: 65%;
+    }
+
+    .shopping_details_intermediate .price_total {
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width: 112px) and (max-width: 600px) {
+    .shopping_cart-container {
+        max-width: 500px;
+    }
+
+    .title{
+        background: #71e5ff;
+        padding: 5px;
+        text-align: center;
+    }
+
+    /*商品 start*/
+    .internal{
+        height: 380px;
+    }
+    /*title區*/
+    .news_title p {
+        display: none;
+    }
+
+    .phone_course_amount_title, .phone_class_hours_title, .phone_learn_title {
+        font-size: 18px;
+        display: inline;
+    }
+
+    /*學習*/
+    .phone_learn_title {
+        position: relative;
+        top:10px;
+        left: -350px;
+        font-size: 20px;
+        white-space:nowrap;
+    }
+
+    .learn_area select{
+        position: relative;
+        top:-28px;
+        right: 150px;
+        width: 180px;
+        font-size: 17px;
+    }
+
+    /*時間*/
+    .phone_class_hours_title {
+        position: relative;
+        top:73px;
+        left: -391px;
+        font-size: 20px;
+        white-space:nowrap;
+    }
+
+    .hour_area #hour{
+        position: relative;
+        top:40px;
+        left: -250px;
+        font-size: 20px;
+        white-space:nowrap;
+    }
+
+    /*課程金額*/
+    .phone_course_amount_title {
+        position: relative;
+        top:145px;
+        left: -442px;
+        font-size: 20px;
+        white-space:nowrap;
+    }
+
+    .purchase_course_area select{
+        position: relative;
+        top:106px;
+        right: 273px;
+        width: 180px;
+        font-size: 17px;
+    }
+
+    /*選取框*/
+    .form-check-input {
+        position: relative;
+        top:-110px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .commodity_title {
+        max-width: 50%;
+    }
+
+    .learn_title {
+        width: 18.5vw;
+    }
+
+    .class_hours_title {
+        width: 110px;
+    }
+
+    /*資訊區*/
+    .sticker {
+        min-width: 130px;
+        max-width: 130px;
+        height: 100px;
+        margin-left: 3vw;
+        margin-top: 20px;
+    }
+
+    .news_area {
+        min-width: 200px;
+        width: 500rem;
+        margin-top: -240px;
+    }
+
+    .news_area, .t_name span {
+        font-size: 20px;
+    }
+
+    .hour_area {
+        font-size: 17px;
+        margin-left: -50px;
+        width: 180px;
+    }
+
+    .del_commodity_title {
+        display: none;
+    }
+
+    .delete_commodity {
+        position: relative;
+        top: -170px;
+        left: -60vw;
+    }
+
+    /*商品 end*/
+    /*付款方式*/
+    .payment_method .card {
+        min-width: 65%;
+        margin-left: 17vw;
+        margin-bottom: 10px;
+    }
+
+    /*明細*/
+    .detail_show span {
+        font-size: 18px;
+    }
+
+    .detail_show .name {
+        width: 55%;
+    }
+
+    /*明細總價*/
+    .shopping_details_intermediate .price_title {
+        width: 55%;
+    }
+
+    .shopping_details_intermediate .price_total {
+        width: 35%;
+    }
+}
+
+
+
+/*677以上變更成電腦板縮小的商品樣式*/
+@media only screen and (min-width: 677px) {
+    .shopping_cart-container {
+        max-width: 800px;
+    }
+
+    /*商品 start*/
+    /*title區*/
+    .phone_course_amount_title, .phone_class_hours_title, .phone_learn_title {
+        display: none;
+    }
+
+    .form-check-input {
+        position: absolute;
+        margin-top: -45px;
+        margin-left: -10px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .commodity_title {
+        max-width: 50%;
+    }
+
+    .learn_title {
+        width: 18.5vw;
+    }
+
+    .class_hours_title {
+        width: 110px;
+    }
+
+    /*資訊區*/
+    .sticker {
+        max-width: 100px;
+        height: 70px;
+    }
+
+    .news_area {
+        width: 500px;
+    }
+
+    .news_area, .t_name span {
+        font-size: 15px;
+    }
+
+    .learn_area select {
+        font-size: 14px;
+        margin-left: -70px;
+        width: 130px;
+    }
+
+    .hour_area {
+        font-size: 14px;
+        margin-left: -50px;
+        width: 180px;
+    }
+
+    .purchase_course_area select {
+        font-size: 14px;
+        margin-left: -40px;
+        width: 140px;
+    }
+
+    .del_commodity_title {
+        display: none;
+    }
+
+    .delete_commodity {
+        position: relative;
+        top: -35px;
+        left: -20px;
+    }
+
+    /*商品 end*/
+    /*付款方式*/
+    .payment_method .card {
+        min-width: 65%;
+        margin-left: 100px;
+        margin-bottom: 10px;
+    }
+
+    /*明細*/
+    .detail_show span {
+        font-size: 18px;
+    }
+
+    .detail_show .name {
+        width: 65%;
+    }
+
+    /*明細總價*/
+    .shopping_details_intermediate .price_title {
+        width: 65%;
+    }
+
+    .shopping_details_intermediate .price_total {
+        width: 25%;
+    }
+}
+
+/*952以上變更成電腦板正常的商品樣式*/
+@media only screen and (min-width: 952px) {
+    .shopping_cart-container {
+        max-width: 1100px;
+    }
+
+    /*商品 start*/
+    /*title區*/
+    .news_title p {
+        display: block;
+    }
+
+    .phone_course_amount_title, .phone_class_hours_title, .phone_learn_title {
+        display: none;
+    }
+
+    .commodity_title {
+        max-width: 50%;
+    }
+
+    .learn_title {
+        width: 180px;
+    }
+
+    .class_hours_title {
+        width: 150px;
+    }
+
+    .course_amount_title {
+        width: 150px;
+    }
+
+    /*資訊區*/
+    .form-check-input {
+        position: absolute;
+        margin-top: 0.3rem;
+        margin-left: -1.25rem;
+    }
+
+    .sticker {
+        max-width: 100px;
+        height: 70px;
+    }
+
+    .news_area {
+        width: 500px;
+    }
+
+    .news_area, .t_name span {
+        font-size: 15px;
+    }
+
+    .learn_area select {
+        font-size: 14px;
+        margin-left: -100px;
+        width: 130px;
+    }
+
+    .hour_area {
+        font-size: 14px;
+        margin-left: -100px;
+        width: 180px;
+    }
+
+    .purchase_course_area select {
+        font-size: 14px;
+        margin-left: -40px;
+        width: 140px;
+    }
+
+    .del_commodity_title {
+        display: block;
+    }
+
+    .delete_commodity {
+        position: relative;
+        top: 0;
+        left: -45px;
+    }
+
+    /*商品 end*/
+    /*付款方式*/
+    .payment_method .card {
+        min-width: 30%;
+        margin-left: 0;
+    }
+
+    /*明細*/
+    .detail_show span {
+        font-size: 17px;
+    }
+
+    .detail_show .name {
+        width: 80%;
+    }
+
+    /*明細總價*/
+    .shopping_details_intermediate .price_title {
+        width: 80%;
+    }
+
+    .shopping_details_intermediate .price_total {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .shopping_cart-container {
+        max-width: 1300px;
+    }
+
+    /*商品 start*/
+    /*title區*/
+    .commodity_title {
+        max-width: 40%;
+    }
+
+    .learn_title {
+        width: 19vw;
+    }
+
+    .class_hours_title {
+        width: 145px;
+    }
+
+    .course_amount_title {
+        width: 18vw;
+    }
+
+    /*資訊區*/
+    .sticker {
+        max-width: 100px;
+        height: 70px;
+    }
+
+    .news_area {
+        width: 440px;
+    }
+
+    .news_area, .t_name span {
+        font-size: 18px;
+    }
+
+    .learn_area select {
+        font-size: 16px;
+        margin-left: -160px;
+        width: 150px;
+    }
+
+    .hour_area {
+        font-size: 14px;
+        margin-left: -160px;
+        width: 140px;
+    }
+
+    .purchase_course_area select {
+        font-size: 16px;
+        margin-left: -45px;
+        width: 150px;
+    }
+
+    /*商品 end*/
+}
+
+@media only screen and (min-width: 1050px) {
+    /*商品 start*/
+    /*title區*/
+    .commodity_title {
+        max-width: 40%;
+    }
+
+    .learn_title {
+        width: 19vw;
+    }
+
+    .class_hours_title {
+        width: 145px;
+    }
+
+    .course_amount_title {
+        width: 19vw;
+    }
+    /*商品 end*/
+}
+
+@media only screen and (min-width: 1100px) {
+    /*商品 start*/
+    /*title區*/
+    .learn_title {
+        width: 220px;
+    }
+
+    .class_hours_title {
+        width: 160px;
+    }
+
+    .course_amount_title {
+        width: 190px;
+    }
+
+    /*商品 end*/
+}
+
+@media only screen and (min-width: 1200px) {
+    .shopping_cart-container {
+        max-width: 1366px;
+    }
+
+    /*商品 start*/
+    /*title區*/
+    .commodity_title {
+        max-width: 43%;
+    }
+
+    .learn_title {
+        width: 205px;
+    }
+
+    .class_hours_title {
+        width: 200px;
+    }
+
+    .course_amount_title {
+        width: 220px;
+    }
+
+    /*資訊區*/
+    .sticker {
+        max-width: 130px;
+        height: 100px;
+    }
+
+    .news_area {
+        width: 480px;
+    }
+
+    .news_area, .t_name span {
+        font-size: 20px;
+    }
+
+    .learn_area select {
+        font-size: 16px;
+        margin-left: -130px;
+        width: 160px;
+    }
+
+    .hour_area {
+        font-size: 18px;
+        margin-left: -140px;
+        width: 140px;
+    }
+
+    .purchase_course_area select {
+        font-size: 16px;
+        margin-left: -40px;
+        width: 160px;
+    }
+
+    .delete_commodity {
+        margin-left: 50px;
+    }
+
+    /*商品 end*/
+    /*付款方式*/
+    .payment_method .card {
+        min-width: 25%;
+    }
+
+    /*明細*/
+    .detail_show span {
+        font-size: 20px;
+    }
+
+    .detail_show .name {
+        width: 85%;
+    }
+
+    /*明細總價*/
+    .shopping_details_intermediate .price_title {
+        width: 85%;
+    }
+
+    .shopping_details_intermediate .price_total {
+        width: 13%;
+    }
+}

@@ -1,0 +1,153 @@
+footer{
+    width: -webkit-fill-available;
+    bottom: 0;
+}
+
+.favorite__container-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.favorite__container-empty{
+    display: none;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.card figure {
+    position: relative;
+}
+.card figure::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.card figure:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s;
+}
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        width: 200%;
+        height: 200%;
+        opacity: 0;
+    }
+}
+
+.card {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+.card img {
+    height: -webkit-fill-available;
+    padding: 0;
+    width: -webkit-fill-available;
+}
+
+.card-header {
+    height: 165px;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.btn_favorite {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 4px;
+    font-size: 24px;
+}
+
+.btn_favorite i {
+    color: red;
+}
+
+.btn_favorite:hover .fa-heart:before {
+    cursor: pointer;
+    content: "\f08a";
+}
+
+.btn_goCourse{
+    width: -webkit-fill-available;
+}
+
+
+
+@media (max-width: 576px) {
+    .card{
+        width: 100% !important;
+    }
+
+    .card-header img {
+        width: unset;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .card{
+        width: 240px !important;;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .card{
+        width: 330px !important;;
+    }
+    .card-header {
+        height: 216px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .card{
+        width: 280px !important;;
+    }
+    .card-header {
+        height: 180px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card{
+        width: 255px !important;;
+    }
+
+}

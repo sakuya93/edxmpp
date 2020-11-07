@@ -1,0 +1,24 @@
+main {
+    margin-top: 50px;
+}
+
+.member_management_body {
+    border: 1px solid black;
+}
+
+.input-title {
+    padding: 10px;
+}
+
+.mug_shot {
+    margin-top: 10px;
+    background-size: cover;
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.footer{
+    float: right;
+    margin:50px 190px 20px 0;
+}

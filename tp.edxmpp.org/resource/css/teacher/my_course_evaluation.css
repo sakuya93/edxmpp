@@ -1,0 +1,253 @@
+body{
+    background: url("../../pics/share/teach_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*選取課程*/
+.select_course_btn{
+    margin: -30px 0 30px -15px;
+}
+
+.select_course_btn .dropdown-menu{
+    max-height: 300px !important;
+    overflow: auto !important;
+}
+
+.select_course_btn .option_header{
+    color: white !important;
+    font-size: 18px !important;
+    background-color: rgba(88, 128, 255, 0.5) !important;
+}
+
+/*主要標題*/
+.title {
+    margin-top: 100px;
+}
+
+/*標題文字*/
+.title_text {
+    font-size: 18px;
+    margin: 30px 0 10px 0;
+}
+
+.bd-2-s-gray {
+    border: 2px solid rgba(211, 220, 230, .3);
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid rgba(211, 220, 230, .3);
+}
+
+.my_course_evaluation-container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 10rem auto 70px auto;
+}
+
+/*商品 start*/
+
+/*  明細顏色類型  */
+.course_type {
+    font-size: 18px;
+    background: #efe3d2;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border-bottom: black 1.5px dashed;
+}
+
+.course_type_2 {
+    font-size: 18px;
+    color: white;
+    background: #9ac0b5;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem
+}
+
+/*  明細header  */
+.course_header_block {
+    background: #de605a;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem
+}
+
+.course_header_title {
+    font-size: 28px;
+}
+
+.course_info_img img {
+    height: 20vh;
+    width: 20vh;
+}
+
+.tools i{
+    font-size: 28px;
+    margin-top: 80px;
+}
+
+/*評價區塊 start*/
+.evaluation_collapse{
+    margin:20px 0 0 50px;
+}
+
+/*評分*/
+.score-body i{
+    color: rgb(255,204,0);
+    font-size:30px;
+    cursor: default;
+}
+
+/*評語*/
+.comment-body textarea{
+    resize:none;
+    padding: 5px;
+    cursor: default;
+    background: lightgray;
+    border: none;
+}
+
+.comment_area{
+    width: 160%;
+}
+
+/*評價區塊 end*/
+
+/* 響應 */
+@media (max-width: 426px) {
+    .my_course_evaluation-container {
+        padding-right: unset;
+    }
+
+    .course_info_img {
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .course_detail_block {
+        margin-top: 1.5rem;
+    }
+
+    .course_detail_field {
+        display: inline;
+        max-width: 50%;
+    }
+
+    .tools{
+        margin-left: -40px;
+    }
+}
+
+@media (min-width: 426px) {
+    .my_course_evaluation-container {
+        width: 100%;
+        padding-right: unset;
+    }
+
+    .course_info_img {
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .course_detail_block {
+        margin-top: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    .item img {
+        max-width: 8vw;
+        max-height: 15vh;
+    }
+
+    .my_course_evaluation-container {
+        max-width: 570px;
+    }
+
+    .course_info_img {
+        text-align: unset;
+        margin-left: unset;
+    }
+
+    .course_detail_block {
+        margin-left: 1.3rem;
+    }
+
+    .course_detail_field {
+        display: unset;
+    }
+
+    .course_detail_info {
+        margin-left: 1.1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .item {
+        height: 154px;
+    }
+
+    .item-description {
+        width: 390px;
+    }
+
+    .my_course_evaluation-container {
+        max-width: 720px;
+    }
+
+    .course_detail_block {
+        margin-left: inherit;
+    }
+
+    .course_detail_field {
+        margin-left: 15.1rem;
+    }
+
+    .course_detail_info {
+        margin-left: unset;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .my_course_evaluation-container {
+        max-width: 960px;
+    }
+
+    .course_detail_block {
+        margin-left: 2rem;
+        margin-top: unset;
+    }
+
+    .course_info_detail {
+        margin-top: 0.2rem;
+        margin-left: 0.5rem;
+    }
+
+    .course_detail_field {
+        margin-left: unset;
+    }
+
+    .course_detail_info {
+        margin-left: 1.5rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .my_course_evaluation-container {
+        max-width: 1366px;
+    }
+
+    .course_info_detail {
+        margin-left: unset;
+    }
+}
+

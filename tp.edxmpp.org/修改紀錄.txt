@@ -1,0 +1,34 @@
+7/13
+1.後台管理_老師審核
+
+7/16
+1.新增直播課程
+2.(後台)課程選項新增
+3.新增影片課程
+4.(後台)貸幣轉換
+5.新增募資課程
+
+7/21
+[Table]
+1. [Table] shoppingCart 改名 > shoppingcart
+3. [Table] courseFilm 改名 > coursefilm 
+4. [Table] courtDiscount 改名 > courtdiscount
+
+[功能]
+1. 課程管理頁面 - 直播,影片,募資,直播價格設定
+2. 直播價格設定 未完成 : Message: Undefined property: Course_management::$MY_currency
+3. 儀錶板 - 瀏覽
+4. 我的課程 - 瀏覽
+5. 老師簡介 - 瀏覽
+6. 我的收藏課程
+7. 儲值鑽石
+8. (後台) 付款紀錄 - 抽成
+
+7/24
+1.課程管理(直播)-匹配時間【資料表livetime 改名 liveTime 、 資料表livematchtime 改名 liveMatchTime】(包含顯示、新增、刪除)
+2.課程管理(影片)-修改(包含編輯課程資料、新增課程標籤)、刪除課程
+3.課程管理(募資)-修改
+4.課程管理(募資)-新增(新增課程標籤)
+5.課程瀏覽(影片)-(包含收藏課程、瀏覽課程)
+6.收藏課程(包含取消收藏課程)
+7.課程瀏覽(募資)-(包含瀏覽課程)

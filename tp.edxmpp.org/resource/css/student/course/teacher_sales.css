@@ -1,0 +1,529 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, PingFang HK, \.PingFang-SC-Regular, PingFang, Hiragino Sans GB, STHeiti, Microsoft JhengHei, sans-serif;
+    background: url("../../../pics/share/teach_bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-item h2, .nav-item li, .nav-item ol, p, .nav-item ul {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*整體內容顯示*/
+.teacher_content {
+    width: 70%;
+    margin: 10rem auto 200px auto;
+    background: white;
+    padding: 30px;
+}
+
+/*麵包屑*/
+.breadcrumb ol, .breadcrumb ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.breadcrumb ul {
+    list-style: none;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: deeppink;
+}
+
+.breadcrumb {
+    background: rgba(0, 0, 0, 0);
+    margin: -30px 0 0 -17px;
+}
+
+.breadcrumb a:hover {
+    color: deeppink;
+}
+
+/*老師介紹區 start*/
+.teacher_introduction {
+    margin-left: -10px;
+}
+
+/*主題*/
+.subject {
+    font-size: 20px;
+}
+
+/*頭像部分*/
+.teacher_content .sticker {
+    border-radius: 50%;
+    height: min-content;
+}
+
+.teacher_introduction .course_introduction {
+    color: #02cab9;
+}
+
+.teacher_introduction .teacher_news {
+    font-size: 22px;
+    margin-top: 17px;
+}
+
+.teacher_news .name {
+    font-size: 28px;
+}
+
+/*介紹區*/
+.Introduction_Area {
+    margin: 10px 0 20px 0;
+    background: rgba(255, 204, 153, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*介紹區顯示最大高度*/
+.Introduction {
+    max-height: 310px;
+    overflow-x: auto;
+}
+
+/*常見問題區*/
+.question_Area {
+    margin: 10px 0 20px 0;
+    background: rgba(255, 204, 153, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/*常見問題區顯示最大高度*/
+.question {
+    max-height: 310px;
+    overflow-x: auto;
+}
+
+/*更多自我介紹*/
+.more {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.more span, .more i {
+    color: #02cab9;
+}
+
+/*老師介紹區 end*/
+
+/*課程購買區 start*/
+.course_purchase {
+    /*margin-left: 100px;*/
+}
+
+/*老師影片*/
+.course_purchase .video-wrap {
+    margin-bottom: 20px;
+}
+
+.course_purchase .price {
+    color: deeppink;
+    font-size: 27px;
+}
+
+.course_purchase .reservation_btn {
+    margin: 10px 0;
+}
+
+.btns button:not(last-child) {
+    margin-bottom: 1rem;
+}
+
+/*聯繫老師*/
+.contact_teacher {
+    margin: 0 0 20px 0;
+    /*width: 350px;*/
+}
+
+.contact_teacher i {
+    font-size: 24px;
+    text-align: center;
+    color: #717171;
+    /*margin: 6px 10px 0 10px;*/
+}
+
+.contact_teacher i:hover {
+    font-size: 26px;
+    color: blue;
+    cursor: pointer;
+}
+
+/*課程優惠消息*/
+.course_offer_news {
+    /*width: 350px;*/
+    margin-bottom: 30px;
+}
+
+.course_offer_news span {
+    color: grey;
+    font-size: 14px;
+}
+
+/*課堂購買*/
+.class_purchase .selling_card {
+    /*width: 350px;*/
+    /*height: 80px;*/
+    /*margin: 10px 0 0 0;*/
+    border: 1.2px solid #cccccc;
+    border-radius: 5px;
+    margin: 10px 0 0.5rem 0;
+}
+
+.class_purchase .selling_card:hover {
+    box-shadow: 3px 3px 9px #cccccc;
+    cursor: pointer;
+}
+
+.class_purchase .price_hours {
+    padding: 10px;
+    word-break: break-word;
+}
+
+.price_hours i {
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.class_purchase .discount_ratio {
+    margin-top: 27px;
+}
+
+.class_purchase .discount_ratio span {
+    border: 1px solid #02cab9;
+    border-radius: 2px;
+    padding: 3px;
+    color: #02cab9;
+    position: absolute;
+    right: -15px;
+    top: -2px;
+}
+
+.class_purchase .right_arrow i {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 25px;
+    right: -10px;
+}
+
+/*更多優惠的箭頭會跑掉-已修正*/
+.more_item .right_arrow {
+    position: relative;
+    bottom: 65px;
+    left: 393px;
+}
+
+/*顯示更多優惠*/
+.more_offers {
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.more_offers_text {
+    white-space: nowrap;
+    /*margin-left: -50px;*/
+}
+
+.more_offers i, .more_offers span {
+    cursor: pointer;
+}
+
+/*一開始第四筆之後的優惠都先隱藏*/
+.more_item {
+    display: none;
+}
+
+/*箭頭翻轉*/
+.reversal {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    transition: transform 0.3s ease 0s;
+    align-self: baseline;
+}
+
+.video-mobile {
+    display: none;
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+.video-mobile iframe {
+    width: 100%;
+    height: 50vh;
+}
+
+/*課程購買區 end*/
+
+/*課程留言討論區 start*/
+.message_discuss_area .title {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.message_discuss_area .avatar {
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+}
+
+/*使用者區*/
+.message_discuss_area .user_area .avatar {
+    margin-top: -50px;
+}
+
+.message_discuss_area textarea {
+    border: 1px;
+    border-bottom-style: solid;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    resize: none;
+    width: 50vw;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.message_discuss_area .message_btn, .message_discuss_area .cancel_message_btn {
+    visibility: hidden;
+    position: relative;
+    right: 0;
+    top: -13px;
+}
+
+/*討論區*/
+.discuss_area {
+    margin-top: 50px;
+    margin-bottom: -50px;
+    margin-left: 0;
+}
+
+.discuss_area .avatar_area {
+    float: left;
+}
+
+.discuss_area .message_information_area .score_area i {
+    margin-right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.discuss_area .message_information_area .score_area span {
+    cursor: pointer;
+    color: blue;
+}
+
+.discuss_area .message_information_area .reply_area {
+    margin-top: 10px;
+}
+
+.more_reply {
+    cursor: pointer;
+    color: blue;
+}
+
+.more_message_discuss_area {
+    margin-top: 15px;
+    margin-left: -60px;
+    transform: scale(0.9);
+    display: none;
+}
+
+.more_message_discuss_area .avatar {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.more_message_discuss_area .score_area {
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.discuss_area .message_text {
+    word-break: break-all;
+}
+
+.message_information_area {
+    margin-bottom: 20px;
+}
+
+/*回覆區*/
+.reply_input_area {
+    transform: scale(0.7);
+    margin-left: -140px;
+    margin-bottom: -10px;
+    width: auto;
+    display: none;
+}
+
+.reply_input_area textarea {
+    width: 40vw;
+}
+
+/*更多資料載入icon*/
+.more_loading_icon {
+    background-image: url('../../../pics/loading.gif');
+    background-repeat: no-repeat;
+    margin: 50px 0 10px 50px;
+    display: none;
+}
+
+.more_loading_icon p {
+    margin-left: 10px;
+    margin-top: -3px;
+}
+
+/*課程留言討論區 end*/
+
+/*------------------------------------------------RWD---------------------------------------------------------*/
+/*原本576*/
+@media (max-width: 426px) {
+    .contact_teacher .row {
+        flex-wrap: nowrap;
+    }
+
+    .teacher_content {
+        width: 100%;
+        margin-bottom: 3rem;
+        padding-top: 70px;
+    }
+
+    .video-wrap iframe {
+        /*padding-right: unset !important;*/
+        /*padding-left: unset !important;*/
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: -43px;
+        width: 100vw;
+    }
+
+    .video-mobile {
+        /*display: unset;*/
+    }
+
+    .video-wrap:not(.video-mobile) {
+        /*display: none;*/
+    }
+
+    .max-width-800 {
+        margin-top: 3rem !important;
+    }
+
+    .breadcrumb {
+        margin-top: -60px;
+    }
+
+    .class_purchase .right_arrow i {
+        top: -40px;
+        right: 20px;
+    }
+
+    .more_item .right_arrow {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .class_purchase .right_arrow i {
+        top: -40px;
+        right: 20px;
+    }
+
+    .sticker{
+        /*width: 50%;*/
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .teacher_introduction, .course_purchase {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1073px) {
+    .teacher_introduction {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .teacher_news {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .teacher_content .sticker {
+        flex: 0 0 50%;
+        /*max-width: 25%;*/
+        margin: 0 auto;
+    }
+
+    .course_purchase {
+        flex: 0 0 100%;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .more_item .right_arrow {
+        bottom: 65px;
+        left: 265px;
+    }
+}
+
+@media (min-width: 1073px) {
+    .teacher_news {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .sticker {
+        /*max-width: 32%;*/
+        /*max-width: 40%;*/
+    }
+}
+
+@media (min-width: 1280px) {
+    .more_item .right_arrow {
+        bottom: 65px;
+        left: 322px;
+    }
+}
+
+@media (min-width: 1366px) {
+    .more_item .right_arrow {
+        bottom: 65px;
+        left: 347px;
+    }
+}
+
+@media (min-width: 1496px) {
+    .more_item .right_arrow {
+        bottom: 65px;
+        left: 393px;
+    }
+}

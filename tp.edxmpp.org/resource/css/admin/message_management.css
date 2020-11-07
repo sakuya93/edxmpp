@@ -1,0 +1,182 @@
+/*指定聯絡人視窗*/
+.contact_person_data_area{
+    border: 1px gray dashed;
+    padding: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+.contact_person_data_area .title_text{
+    font-size: 18px;
+}
+
+.contact_person_data_area #contact_person_img{
+    width: 100px;
+}
+
+.contact_person_data_area #contact_person_name{
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact_person_data_area div{
+    margin-top: 10px;
+}
+
+/*管理頁面*/
+.designated_contact_btn {
+    float: left !important;
+}
+
+.search_area {
+    float: right !important;
+    width: 40% !important;
+}
+
+.search_area input {
+    height: 45px;
+}
+
+.input-group-btn i {
+    margin-top: 2px;
+    margin-left: -1px;
+}
+
+.input-group-btn {
+    font-size: 14px;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*訊息呈現*/
+.message_present {
+    margin-top: 80px;
+    border: 1px solid black;
+    margin-right: 3px;
+    margin-left: 0;
+}
+
+.message_present_left {
+    border-right: 1px solid black;
+    height: 39vw;
+    width: 50vw;
+    overflow: auto;
+}
+
+/*訊息左側*/
+.message_box {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.message_box .data_area {
+    display: none;
+}
+
+.message_present_left :hover {
+    background: #f2f2f2;
+}
+
+.message_box .message_name {
+    font-weight: bold;
+    display: block;
+}
+
+.message_box .new_message_text {
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 15px;
+    color: #696969;
+}
+
+.message_box .avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto 1rem auto;
+}
+
+.message_box .date_area{
+    text-align: right;
+}
+
+.message_box .new_message_date {
+    font-size: 16px;
+    color: #7a7a7a;
+}
+
+/*未已讀狀態*/
+.message_present_left .unread {
+    background-color: #d2ecff;
+}
+
+.message_present_left .unread :hover {
+    background-color: unset;
+}
+
+/*訊息右側*/
+.message_present_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message_bar {
+    height: 100%;
+}
+
+.message_bar .navbar-brand {
+    padding-top: unset;
+}
+
+.message_bar .chat__header {
+    padding-top: 8px;
+    padding-left: 30px;
+}
+
+.message_bar .chat__body {
+    height: unset;
+}
+
+.message_bar .chat__body-inner {
+    height: 438px;
+}
+
+.message_bar .chat__footer {
+    bottom: 2px;
+}
+
+.message_bar .sendMessage__input {
+    resize: none;
+}
+
+.message_bar .box__user-avatar {
+    background-image: unset;
+}
+
+.message_bar .message-content {
+    word-break: break-all;
+}
+
+.message_bar .message-date {
+    color: #5e5e5e;
+    font-size: 12px;
+    margin-top: unset;
+    margin-bottom: unset;
+}
+
+/*未選擇訊息*/
+.not_sel_message {
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+}

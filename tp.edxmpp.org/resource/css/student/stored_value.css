@@ -1,0 +1,258 @@
+.stored_value_area {
+    margin-bottom: 270px;
+}
+
+.stored_value_title {
+    margin-top: 150px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/*儲值選項區*/
+.stored_value_option .option {
+    border-radius: 8px;
+    background-color: #f1f0f0;
+    margin-left: 0;
+    border: 1px solid lightgrey;
+}
+
+.stored_value_option .option img {
+    margin: 0 auto;
+}
+
+.option_sel {
+    border: 3px solid grey;
+}
+
+.option_sel:active {
+    border: 3px solid #00bdff;
+}
+
+/*選擇後的選項簡介顯示*/
+.select_option_information_area, .select_option_information_area #select_option_text {
+    margin-top: 15px;
+}
+
+/*幣值選項區*/
+/*左側*/
+.currency_value_area {
+    margin-top: 30px;
+}
+
+.currency_value_area_title {
+    margin-right: 1px;
+    color: red;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
+}
+
+.currency_value_area_option {
+    margin-right: 1px;
+    margin-top: 10px;
+}
+
+.currency_value_area_option .custom-control-label {
+    border-right: 1px solid grey;
+}
+
+/*右側*/
+.information_write_area {
+    border-left: 1px solid grey !important;
+    min-height: 300px;
+}
+
+.information_write_area .not_select_text {
+    position: relative;
+    top: 130px;
+    left: 160px;
+    display: none;
+}
+
+.table_data_area {
+    margin-left: 50px;
+}
+
+.table_data_area li {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.table_data_area ul {
+    margin-bottom: 5px;
+}
+
+/*商品內容*/
+.table_data_area .product_content {
+    border-bottom: 1px dashed gray;
+    margin-bottom: 10px;
+}
+
+.table_data_area .product_content .currency_area,
+.table_data_area .product_content .price_area,
+.table_data_area .product_content .payment_method_area {
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+/*填寫信用卡資料*/
+.add_information {
+    border-bottom: 1px dashed gray;
+    margin-bottom: 10px;
+}
+
+.add_information input {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+/*必填資訊*/
+.table_data_area .add_information .required {
+    color: red;
+    font-weight: bold;
+}
+
+/*發票資料*/
+.invoice_information {
+    border-bottom: 1px dashed gray;
+    padding-bottom: 10px;
+}
+
+.invoice_option {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.invoice_option .option {
+    border-radius: 5px;
+    background-color: #f1f0f0;
+    margin-left: 0;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+    height: 50px;
+}
+
+.personal_option_area .vehicle_category, .personal_option_area input {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.personal_option_area .vehicle_number {
+    display: none;
+}
+
+.not_vehicle_area input{
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.not_vehicle_area {
+    display: block;
+}
+
+/*同意條款部分*/
+.agreement {
+    margin: 1em 0;
+}
+
+.agreement a {
+    text-decoration: none;
+}
+
+@media (max-width: 576px){
+    .container.stored_value_area{
+        padding: 0 2rem;
+        margin-bottom: 10rem;
+        max-width: unset;
+    }
+
+    .currency_value_area{
+        display: block;
+        /*padding: 2rem;*/
+    }
+
+    .currency_value_select_area{
+        max-width: unset;
+    }
+
+    .currency_value_area_title{
+        margin-right: unset;
+    }
+
+    .information_write_area{
+        max-width: unset;
+        margin-top: 2rem;
+        border-left: unset !important;
+        /*padding-left: 2rem;*/
+    }
+
+    .table_data_area{
+        margin-left: 0;
+    }
+
+    .currency_value_area_price, .currency_value_area_worth{
+        flex-basis: 0;
+        flex-grow: 1;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) {
+    .container.stored_value_area{
+        max-width: unset;
+        padding: 0 3rem;
+    }
+    
+    .currency_value_area{
+        display: block;
+        /*padding: 2rem;*/
+    }
+
+    .currency_value_select_area{
+        max-width: unset;
+    }
+
+    .currency_value_area_title{
+        margin-right: unset;
+    }
+
+    .information_write_area{
+        max-width: unset;
+        margin-top: 2rem;
+        /*padding-left: 2rem;*/
+    }
+
+    .table_data_area{
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 768px){
+    .container.stored_value_area{
+        max-width: 720px;
+    }
+
+    .currency_value_area{
+        padding: unset;
+        display: flex;
+    }
+
+    .currency_value_area_title{
+        margin-right: 1px;
+    }
+
+    .information_write_area{
+        padding-left: unset;
+        margin-top: unset;
+    }
+
+    .table_data_area{
+        margin-left: 50px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container.stored_value_area{
+        max-width: 1140px;
+    }
+}
